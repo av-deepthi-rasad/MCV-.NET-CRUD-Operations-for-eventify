@@ -1,0 +1,39 @@
+﻿
+@model Event
+
+@{
+    Layout = "_Layout";
+}
+
+
+@if (Model != null)
+{
+    <h3>Event: @Model.Name</h3>
+}
+
+@if (Model != null){
+
+<form method="post" asp-controller="Events" asp-action="Edit" style="padding:10px; margin:10px;width:500px">
+    <input type="hidden" asp-for="EventId" />
+    <div class="">
+        <label asp-for="Name" class="col-form-label"></label>
+ 
+    
+        <div class="" >
+            <input type="text" asp-for="Name" class="form-control"/>
+        </div>
+         <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="">
+        <label asp-for="Description" class="col-form-label"></label>
+   
+        <div class="">
+            <input type="text" asp-for="Description" class="form-control"/>
+        </div>
+     </div>
+
+    <div class="" style="margin-top:30px">
+        <input type ="submit" class="btn btn-primary" value="Save"/>
+    </div>
+</form>
+}

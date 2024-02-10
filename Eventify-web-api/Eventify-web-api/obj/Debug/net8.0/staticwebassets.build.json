@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o6s+e6dATVLsaVlWqDLfzMH4J78xOraPq+yehZWvmZM=",
+  "Source": "Eventify-web-api",
+  "BasePath": "_content/Eventify-web-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
